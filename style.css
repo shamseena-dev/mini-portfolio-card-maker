@@ -1,0 +1,16 @@
+.form{
+	width:25rem;
+}
+
+#formDiv{
+	border: 2px solid grey;
+	width:30rem;
+	padding:10px;
+	margin-left:20px;
+}
+#flexContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
