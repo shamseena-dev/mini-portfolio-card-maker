@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title> Card - DOM Project</title>
+	<title> Mini-Portfolio Card Maker</title>
 </head>
-</head>
+
 <body>
 <header>
 	<h1 class="header1 alert alert-dark text-center"> Mini-Portfolio Card Maker</h1>
@@ -15,62 +16,65 @@
 <section id="flexContainer">
 <!--Form -->
 <div id="formDiv">
- <form class="form">
+ <form class="form1">
   <h4> Enter Your details here</h4>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Name :</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" >
+  <div class="form-group1">
+    <label for="formInput1">Name :</label>
+    <input type="text" class="form-control" id="formInput1" placeholder="Name" class="i" >
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput2">Email address :</label>
-    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+  <div class="form-group2">
+    <label for="formInput2">Email address :</label>
+    <input type="email" class="form-control" id="formInput2" placeholder="name@example.com">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput3">Current Role :</label>
-    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Your current role Eg: Desiner, Developer">
+  <div class="form-group3">
+    <label for="formInput3">Current Role :</label>
+    <input type="text" class="form-control" id="formInput3" placeholder="Your current role Eg: Designer, Developer">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Description of your role : </label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Eg: I am a passionate designer, with 3+ years of experience..."></textarea>
+  <div class="form-group4">
+    <label for="formTextarea1">Description of your role : </label>
+    <textarea class="form-control" id="formTextarea1" rows="3" placeholder="Eg: I am a passionate designer, with 3+ years of experience..."></textarea>
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput4">LinkedIn Profile :</label>
-    <input type="url" class="form-control" id="exampleFormControlInput4" placeholder="linkedIn profile link">
+  <div class="form-group5">
+    <label for="formInput5">LinkedIn Profile :</label>
+    <input type="url" class="form-control" id="formInput5" placeholder="linkedIn profile link">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput5">Contact Number :</label>
-    <input type="tel" class="form-control" id="exampleFormControlInput5" placeholder="Phone number">
+  <div class="form-group6">
+    <label for="formInput5">Contact Number :</label>
+    <input type="tel" class="form-control" id="formInput6" placeholder="Phone number">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput6"> Place :</label>
-    <input type="text" class="form-control" id="exampleFormControlInput6" placeholder=" City, zipcode">
+  <div class="form-group7">
+    <label for="formInput7"> Place :</label>
+    <input type="text" class="form-control" id="formInput7" placeholder=" City, zipcode">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput7"> Profile picture :</label>
-    <input type="file" class="form-control" id="exampleFormControlInput5" placeholder="Profile picture">
+  <div class="form-group8">
+    <label for="formInput8"> Profile picture :</label>
+    <input type="file" class="form-control" id="formInput8" placeholder="Profile picture" accept="image/png, image/jpeg, image/jpg, image/JPG" onchange='openFile(event)'>
   </div>
 
  </form>
 </div>
  <!--code for card-->
  <div class="card" style="width: 30rem;">
-  <img src="woman.jpg" class="card-img-top" alt="...">
+  <img src="woman.jpg" class="card-pic" alt="..." height="300px">
   <div class="card-body">
-  	<h3 class="card-title">My Name is </h3>
-    <h3 class="card-title">Current Role : Designer</h3>
-    <p class="card-text">I am a passionate Designer,looking for new opportunities.</p>
+  	<h3 class="card-name">My Name is XXXXX</h3>
+    <h3 class="card-role">Current Role : XXXX</h3>
+    <p class="card-description">I am a passionate designer, with 3+ years of experience</p>
     <!--<a href="#" class="btn btn-primary">Go somewhere</a> -->
-    <h4 > LinkedIn Profile </h4>
-    <h6 class="phoneNum"> Phn : 049101010101</h6>
-    <h6> Mail : example@gmail.com </h6>
-    <h6> Location : Berlin , 10179 </h6>
+    <h4 class="card-linkedIn"> LinkedIn : </h4>
+    <h6 class="card-phone"> Phn : XXXXXXXXXX</h6>
+    <h6 class="card-email"> Mail : example@gmail.com </h6>
+    <h6 class="card-place"> Location : XXXX, 10101 </h6>
 
 
   </div>
 </div>
 </section>
+
+ <script type="text/javascript" src="script.js"></script>
+ 
  <!-- Scripts for Bootstrap--> 
-  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

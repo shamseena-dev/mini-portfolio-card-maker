@@ -1,3 +1,7 @@
+body{
+	font-family: 'Bree Serif', serif;
+}
+
 .header1{
    padding:20px;
  }
@@ -16,4 +20,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+}
+.card{
+	color:#25584f;
 }
