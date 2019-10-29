@@ -4,6 +4,10 @@ body{
 
 .header1{
    padding:20px;
+   color: white;
+   background-color: #003a69;
+   border-bottom: 2px solid #00579e;
+
  }
 .form{
 	width:25rem;
@@ -13,7 +17,7 @@ body{
 	border: 2px solid grey;
 	width:30rem;
 	padding:10px;
-	margin-left:20px;
+	margin:20px;
 }
 #flexContainer{
 	display: flex;
@@ -22,5 +26,8 @@ body{
 	justify-content: space-around;
 }
 .card{
-	color:#25584f;
+	color: #002646;
+	margin:20px;
+	background-color: #BCBEC0;
+	border: 2px 2px 2px #00579e;
 }
