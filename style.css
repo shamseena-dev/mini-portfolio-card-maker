@@ -6,7 +6,7 @@ body{
 .header1{
    padding:20px;
    color: white;
-   background-color: #d01599;
+   background-color: #9c4e85;
    border-bottom: 1px solid grey;
 
  }
@@ -71,7 +71,7 @@ img {
 
 .card-body {
   padding: 10px 16px;
-  background-color:  #d01599;
+  background-color:  #9c4e85;
   border-radius: 0 0 5px 5px;
 }
 
